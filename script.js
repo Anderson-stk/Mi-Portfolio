@@ -96,6 +96,46 @@ revealElements.forEach(el => revealObserver.observe(el));
 
 // --- FLOATING PARTICLES (Hero section) ---
 const particlesContainer = document.getElementById('heroParticles');
+
+// --- CONTACT FORM AJAX ---
+const contactForm = document.getElementById('contactForm');
+const formStatus = document.getElementById('formStatus');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const data = new FormData(contactForm);
+        formStatus.textContent = "Enviando...";
+        formStatus.className = "form-status";
+        
+        try {
+            const response = await fetch(contactForm.action, {
+                method: contactForm.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+            if (response.ok) {
+                formStatus.textContent = "¡Gracias! Tu mensaje ha sido enviado correctamente.";
+                formStatus.className = "form-status success";
+                contactForm.reset();
+            } else {
+                const result = await response.json();
+                if (Object.hasOwn(result, 'errors')) {
+                    formStatus.textContent = result.errors.map(error => error.message).join(", ");
+                } else {
+                    formStatus.textContent = "Oops! Ocurrió un problema al enviar el formulario.";
+                }
+                formStatus.className = "form-status error";
+            }
+        } catch (error) {
+            formStatus.textContent = "Oops! Hubo un problema de conexión al enviar el formulario.";
+            formStatus.className = "form-status error";
+        }
+    });
+}
+
 if (particlesContainer) {
     const particleCount = 30;
     for (let i = 0; i < particleCount; i++) {

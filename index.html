@@ -284,7 +284,7 @@
             <!-- PROYECTO 1: CLINICA WEB -->
             <article class="project-card reveal-up">
                 <div class="project-image">
-                    <img src="imagenes/clinica_web.png" alt="Clínica Web">
+                    <img src="imagenes/ClinicaWeb.png" alt="Clínica Web">
                     <div class="project-overlay">
                         <a href="https://github.com/Anderson-stk/TP-WinForm" target="_blank" rel="noopener" class="project-overlay-btn">
                             <i class="fa-brands fa-github"></i> Ver Detalles
@@ -325,7 +325,7 @@
             <!-- PROYECTO 2: CATALOGO WINFORM -->
             <article class="project-card reveal-up">
                 <div class="project-image">
-                    <img src="imagenes/winforms_app.png" alt="Gestión de Catálogo Comercial">
+                    <img src="imagenes/GestióndeCatálogoComercial.png" alt="Gestión de Catálogo Comercial">
                     <div class="project-overlay">
                         <a href="https://github.com/Anderson-stk/TP-WinForm" target="_blank" rel="noopener" class="project-overlay-btn">
                             <i class="fa-brands fa-github"></i> Ver Código
@@ -452,31 +452,62 @@
         <div class="section-header reveal-up">
             <span class="section-tag">&lt;contacto /&gt;</span>
             <h2 class="section-title">Hablemos</h2>
-            <p class="section-subtitle">¿Tenés un proyecto, una oportunidad o consulta sobre sistemas y seguridad? Escribime.</p>
+            <p class="section-subtitle">¿Tenés un proyecto, una oportunidad o consulta sobre sistemas y seguridad? Escribime directamente.</p>
         </div>
 
-        <div class="contact-grid reveal-up">
-            <a href="mailto:zpozo@gmail.com" class="contact-card">
-                <div class="contact-icon">
-                    <i class="fa-solid fa-envelope"></i>
-                </div>
-                <h4>Email</h4>
-                <p>zpozo@gmail.com</p>
-            </a>
-            <a href="https://www.linkedin.com/in/anderson-pozo" target="_blank" rel="noopener" class="contact-card">
-                <div class="contact-icon">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </div>
-                <h4>LinkedIn</h4>
-                <p>anderson-pozo</p>
-            </a>
-            <a href="https://github.com/Anderson-stk" target="_blank" rel="noopener" class="contact-card">
-                <div class="contact-icon">
-                    <i class="fa-brands fa-github"></i>
-                </div>
-                <h4>GitHub</h4>
-                <p>Anderson-stk</p>
-            </a>
+        <div class="contact-layout reveal-up">
+            <!-- Info Cards -->
+            <div class="contact-info-list">
+                <a href="mailto:zpozo@gmail.com" class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h4>Email</h4>
+                        <p>zpozo@gmail.com</p>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/anderson-pozo" target="_blank" rel="noopener" class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <div>
+                        <h4>LinkedIn</h4>
+                        <p>anderson-pozo</p>
+                    </div>
+                </a>
+                <a href="https://github.com/Anderson-stk" target="_blank" rel="noopener" class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                    <div>
+                        <h4>GitHub</h4>
+                        <p>Anderson-stk</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Formspree Contact Form -->
+            <div class="contact-form-container">
+                <form action="https://formspree.io/f/xvgoevkw" method="POST" class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" required placeholder="Tu nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="_replyto" required placeholder="tuemail@correo.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Hola Anderson, me gustaría conversar sobre..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-full">
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                    <div id="formStatus" class="form-status"></div>
+                </form>
+            </div>
         </div>
     </div>
 </section>
