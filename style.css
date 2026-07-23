@@ -910,6 +910,32 @@ img {
     margin-bottom: 16px;
 }
 
+.project-highlights-list {
+    margin-bottom: 20px;
+    font-size: 0.85rem;
+    border-left: 2px solid var(--accent-1);
+    padding-left: 12px;
+    background: rgba(255, 255, 255, 0.01);
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.project-highlights-list strong {
+    color: var(--text-primary);
+    display: block;
+    margin-bottom: 4px;
+}
+
+.project-highlights-list ul {
+    list-style-type: square;
+    margin-left: 14px;
+    color: var(--text-secondary);
+}
+
+.project-highlights-list li {
+    margin-bottom: 4px;
+}
+
 .project-tags {
     display: flex;
     flex-wrap: wrap;
