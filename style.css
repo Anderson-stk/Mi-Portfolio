@@ -1010,6 +1010,14 @@ img {
     border-radius: 16px;
     transition: all 0.4s var(--ease-out);
     cursor: pointer;
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+.contact-card-content {
+    display: flex;
+    flex-direction: column;
+    pointer-events: none; /* Deletes any text selection interception */
 }
 
 .contact-card:hover {
@@ -1029,6 +1037,7 @@ img {
     font-size: 1.15rem;
     color: #fff;
     flex-shrink: 0;
+    pointer-events: none;
 }
 
 .contact-card h4 {
@@ -1038,6 +1047,7 @@ img {
     text-transform: uppercase;
     letter-spacing: 0.5px;
     margin-bottom: 2px;
+    pointer-events: none;
 }
 
 .contact-card p {
@@ -1045,6 +1055,7 @@ img {
     font-weight: 600;
     color: var(--text-primary);
     word-break: break-all;
+    pointer-events: none;
 }
 
 /* Form Styles */
