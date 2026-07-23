@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Anderson Pozo — Desarrollador Full Stack Junior apasionado por crear soluciones web modernas y eficientes.">
+    <meta name="author" content="Anderson Pozo">
+    <meta name="keywords" content="Anderson Pozo, desarrollador, full stack, programador, portfolio, UTN, JavaScript, C++, SQL">
+    <title>Anderson Pozo | Desarrollador Full Stack</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOADER -->
+<div class="loader" id="loader">
+    <div class="loader-inner">
+        <div class="loader-line"></div>
+        <span class="loader-text">AP</span>
+    </div>
+</div>
+
+<!-- CURSOR GLOW -->
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+    <a href="#home" class="logo">
+        <span class="logo-bracket">&lt;</span>AP<span class="logo-bracket">/&gt;</span>
+    </a>
+
+    <button class="hamburger" id="hamburger" aria-label="Menú de navegación">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active" data-section="home">Inicio</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">Sobre Mí</a></li>
+        <li><a href="#tech" class="nav-link" data-section="tech">Tecnologías</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Proyectos</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contacto</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-particles" id="heroParticles"></div>
+
+    <div class="hero-content">
+        <div class="hero-text">
+            <p class="hero-greeting reveal-up">Hola, soy</p>
+            <h1 class="hero-name reveal-up">Anderson<br><span class="gradient-text">Pozo</span></h1>
+            <div class="hero-role reveal-up">
+                <span class="role-line"></span>
+                <span class="role-text">Desarrollador Full Stack Junior</span>
+            </div>
+            <p class="hero-description reveal-up">
+                Construyo experiencias digitales con código limpio, diseño moderno y pasión por aprender cada día.
+            </p>
+
+            <div class="hero-cta reveal-up">
+                <a href="imagenes/pdf/Anderson_Pozo_CV_Programador_Junior.pdf" class="btn btn-primary" download>
+                    <i class="fa-solid fa-download"></i> Descargar CV
+                </a>
+                <a href="#projects" class="btn btn-outline">
+                    Ver Proyectos <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="hero-socials reveal-up">
+                <a href="https://github.com/Anderson-stk" target="_blank" rel="noopener" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/anderson-pozo" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-visual reveal-up">
+            <div class="hero-img-wrapper">
+                <div class="hero-img-ring"></div>
+                <div class="hero-img-ring ring-2"></div>
+                <div class="hero-img-container">
+                    <img src="imagenes/perfil.jpg" alt="Anderson Pozo — Desarrollador Full Stack">
+                </div>
+            </div>
+            <div class="hero-status">
+                <span class="status-dot"></span> Disponible para trabajar
+            </div>
+        </div>
+    </div>
+
+    <a href="#about" class="scroll-indicator" aria-label="Scroll hacia abajo">
+        <span class="scroll-mouse">
+            <span class="scroll-dot"></span>
+        </span>
+        <span class="scroll-text">Scroll</span>
+    </a>
+</section>
+
+<!-- SOBRE MÍ -->
+<section class="about" id="about">
+    <div class="section-container">
+        <div class="section-header reveal-up">
+            <span class="section-tag">&lt;sobre-mí /&gt;</span>
+            <h2 class="section-title">Conóceme</h2>
+        </div>
+
+        <div class="about-content">
+            <div class="about-text reveal-up">
+                <p>
+                    Soy estudiante de la <strong>Tecnicatura Universitaria en Programación</strong> en la <strong>UTN</strong>, 
+                    con experiencia en el desarrollo de proyectos académicos que abarcan aplicaciones de consola y aplicaciones web.
+                </p>
+                <p>
+                    Durante mi formación trabajé en la implementación de lógica de negocio, la estructuración de código y el 
+                    desarrollo de interfaces, fortaleciendo mis habilidades en resolución de problemas y trabajo orientado a objetivos.
+                </p>
+                <p>
+                    <strong>Busco mi primera oportunidad en IT</strong> para continuar creciendo profesionalmente y contribuir 
+                    activamente en equipos de desarrollo.
+                </p>
+            </div>
+
+            <div class="about-highlights reveal-up">
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div class="highlight-info">
+                        <h4>Formación</h4>
+                        <p>TUP — UTN</p>
+                    </div>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div class="highlight-info">
+                        <h4>Enfoque</h4>
+                        <p>Full Stack Development</p>
+                    </div>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+                    <div class="highlight-info">
+                        <h4>Estado</h4>
+                        <p>Open to Work</p>
+                    </div>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fa-solid fa-map-pin"></i>
+                    </div>
+                    <div class="highlight-info">
+                        <h4>Ubicación</h4>
+                        <p>Argentina</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TECNOLOGÍAS -->
+<section class="tech" id="tech">
+    <div class="section-container">
+        <div class="section-header reveal-up">
+            <span class="section-tag">&lt;tecnologías /&gt;</span>
+            <h2 class="section-title">Mi Stack</h2>
+        </div>
+
+        <div class="tech-grid reveal-up">
+            <div class="tech-card" data-tech="HTML">
+                <div class="tech-card-glow"></div>
+                <img src="imagenes/html.png" alt="HTML5">
+                <span class="tech-name">HTML5</span>
+                <span class="tech-level">Intermedio</span>
+            </div>
+            <div class="tech-card" data-tech="CSS">
+                <div class="tech-card-glow"></div>
+                <img src="imagenes/css.png" alt="CSS3">
+                <span class="tech-name">CSS3</span>
+                <span class="tech-level">Intermedio</span>
+            </div>
+            <div class="tech-card" data-tech="JavaScript">
+                <div class="tech-card-glow"></div>
+                <img src="imagenes/javascript.png" alt="JavaScript">
+                <span class="tech-name">JavaScript</span>
+                <span class="tech-level">Intermedio</span>
+            </div>
+            <div class="tech-card" data-tech="C++">
+                <div class="tech-card-glow"></div>
+                <img src="imagenes/c++-.png" alt="C++">
+                <span class="tech-name">C++</span>
+                <span class="tech-level">Intermedio</span>
+            </div>
+            <div class="tech-card" data-tech="SQL">
+                <div class="tech-card-glow"></div>
+                <img src="imagenes/sql.png" alt="SQL">
+                <span class="tech-name">SQL</span>
+                <span class="tech-level">Intermedio</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROYECTOS -->
+<section class="projects" id="projects">
+    <div class="section-container">
+        <div class="section-header reveal-up">
+            <span class="section-tag">&lt;proyectos /&gt;</span>
+            <h2 class="section-title">Lo que he construido</h2>
+        </div>
+
+        <div class="projects-grid">
+
+            <article class="project-card reveal-up">
+                <div class="project-image">
+                    <img src="imagenes/console.png" alt="Sistema de Inventarios">
+                    <div class="project-overlay">
+                        <a href="https://github.com/Anderson-stk/Proyecto-SuperMercado" target="_blank" rel="noopener" class="project-overlay-btn">
+                            <i class="fa-brands fa-github"></i> Ver Código
+                        </a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <div class="project-type">
+                        <i class="fa-solid fa-terminal"></i> App de Consola
+                    </div>
+                    <h3 class="project-title">Sistema de Inventarios</h3>
+                    <p class="project-desc">
+                        Aplicación desarrollada en C++ orientada a la gestión de inventarios. 
+                        Permite control de stock, altas, bajas, modificaciones de productos y reportes. 
+                        Enfocada en lógica de negocio y persistencia de datos.
+                    </p>
+                    <div class="project-tags">
+                        <span>C++</span>
+                        <span>POO</span>
+                        <span>Archivos</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/Anderson-stk/Proyecto-SuperMercado" target="_blank" rel="noopener" class="project-link">
+                            <i class="fa-brands fa-github"></i> Código
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card reveal-up">
+                <div class="project-image">
+                    <img src="imagenes/portfolioImagen.png" alt="Portfolio Web">
+                    <div class="project-overlay">
+                        <a href="https://anderson-stk.github.io/Mi-Portfolio/" target="_blank" rel="noopener" class="project-overlay-btn">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver Demo
+                        </a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <div class="project-type">
+                        <i class="fa-solid fa-globe"></i> Web App
+                    </div>
+                    <h3 class="project-title">Portfolio Web</h3>
+                    <p class="project-desc">
+                        Portfolio personal responsive desarrollado con HTML, CSS y JavaScript. 
+                        Incluye animaciones, navegación suave y diseño adaptable a distintos dispositivos.
+                    </p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://anderson-stk.github.io/Mi-Portfolio/" target="_blank" rel="noopener" class="project-link">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+                        </a>
+                        <a href="https://github.com/Anderson-stk/Mi-Portfolio" target="_blank" rel="noopener" class="project-link">
+                            <i class="fa-brands fa-github"></i> Código
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="contact" id="contact">
+    <div class="section-container">
+        <div class="section-header reveal-up">
+            <span class="section-tag">&lt;contacto /&gt;</span>
+            <h2 class="section-title">Hablemos</h2>
+            <p class="section-subtitle">¿Tenés un proyecto o una oportunidad? Me encantaría saber de vos.</p>
+        </div>
+
+        <div class="contact-grid reveal-up">
+            <a href="mailto:andersonpozo.dev@gmail.com" class="contact-card">
+                <div class="contact-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <h4>Email</h4>
+                <p>andersonpozo.dev@gmail.com</p>
+            </a>
+            <a href="https://www.linkedin.com/in/anderson-pozo" target="_blank" rel="noopener" class="contact-card">
+                <div class="contact-icon">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <h4>LinkedIn</h4>
+                <p>anderson-pozo</p>
+            </a>
+            <a href="https://github.com/Anderson-stk" target="_blank" rel="noopener" class="contact-card">
+                <div class="contact-icon">
+                    <i class="fa-brands fa-github"></i>
+                </div>
+                <h4>GitHub</h4>
+                <p>Anderson-stk</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-content">
+        <a href="#home" class="footer-logo">
+            <span class="logo-bracket">&lt;</span>AP<span class="logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer-copy">Diseñado y desarrollado por Anderson Pozo &copy; 2026</p>
+        <div class="footer-socials">
+            <a href="https://github.com/Anderson-stk" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/anderson-pozo" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
